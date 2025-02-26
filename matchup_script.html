@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Juego de emparejamiento - Conceptos de JavaScript</title>
+    <link rel="stylesheet" href="matchup_styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+<body>
+    <p style="text-align: center;"> Aprende Javascript a traves de Retos de codificacion automatizados <a href="https://www.refactorii.com">www.refactorii.com</a> </p>
+    <div style="background: white; padding: 18px;"><b> Retos consecutivos:</b> <b>1. Conceptos básicos Javascript</b> >  2. Valores Falsy Javascript  >  3. Metaprogramación y Reactividad en JavaScript para VUE  >  4. Conceptos Básicos VUE  >  5. Conceptos intermedios VUE 
+    | Arrastra la tarjeta con código a la tarjeta con el concepto que haga match, resuelve todos los ejercicios para avanzar al siguiente nivel</div>
+    <h2 style="text-align: center;"></h2> 
+    <div class="buttons-container">
+        <button onclick="checkAnswers()">Validar respuestas</button>
+    </div>
+    <div class="container">
+       <div class="codes"></div>
+       <div class="concepts"></div>
+    </div>
+    <p id="visit-count" style="margin-left: 41px;">Cargando contador...</p>
+    <script>
+         window.onload = function() {
+            fetch('https://www.refactorii.com/increment-visit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.message);
+                // Mostrar el número total de visitas
+                document.getElementById('visit-count').innerText = `Total de visitas: ${data.visitCount}`;
+            })
+            .catch(error => {
+                console.error('Error al incrementar visita:', error);
+            });
+
+        
+        }
+    </script>
+    <script src="matchup_script.js"></script>
+</body>
+</html>
