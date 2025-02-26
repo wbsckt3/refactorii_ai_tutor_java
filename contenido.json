@@ -1,31 +1,32 @@
 {
   "codesReto1": {
-    "title": "1. Conceptos básicos de Javascript",
+    "title": "1. Conceptos básicos de Java para Spring Boot",
     "codes": [
-      { "id": "code1", "code": "Array.isArray([1, 2, 3])" },
-      { "id": "code2", "code": "let nombre = \"Juan\";" },
-      { "id": "code3", "code": "Math.max(5, 10)" },
-      { "id": "code4", "code": "function saludo() { return \"Hola\"; }" },
-      { "id": "code5", "code": "document.getElementById(\"app\")" },
-      { "id": "code6", "code": "const suma = (a, b) => a + b;" },
-      { "id": "code7", "code": "new Date()" },
-      { "id": "code8", "code": "parseInt(\"42\")" },
-      { "id": "code9", "code": "window.localStorage" },
-      { "id": "code10", "code": "console.log(\"Hola Mundo\")" }
+      { "id": "code1", "code": "List<String> nombres = new ArrayList<>();" },
+      { "id": "code2", "code": "String nombre = \"Juan\";" },
+      { "id": "code3", "code": "Math.max(5, 10);" },
+      { "id": "code4", "code": "public String saludo() { return \"Hola\"; }" },
+      { "id": "code5", "code": "@Autowired private UserRepository userRepository;" },
+      { "id": "code6", "code": "Optional<Usuario> user = userRepository.findById(1L);" },
+      { "id": "code7", "code": "LocalDate fecha = LocalDate.now();" },
+      { "id": "code8", "code": "int numero = Integer.parseInt(\"42\");" },
+      { "id": "code9", "code": "@RestController public class UsuarioController { }" },
+      { "id": "code10", "code": "System.out.println(\"Hola Mundo\");" }
     ],
     "concepts": [
-      { "id": "concept1", "description": "Utilizado para trabajar eficientemente con conjuntos de datos almacenados en una estructura que permite acceder a elementos por su posición." },
-      { "id": "concept2", "description": "Sirve para almacenar información en la memoria, la cual puede ser cambiada o mantenida según la necesidad del código." },
-      { "id": "concept3", "description": "Función usada para encontrar el número más alto entre un conjunto de valores." },
-      { "id": "concept4", "description": "Se utiliza para definir bloques de código reutilizables que pueden ejecutarse varias veces con diferentes valores." },
-      { "id": "concept5", "description": "Permite la manipulación de los elementos HTML en una página web." },
-      { "id": "concept6", "description": "Manera concisa de definir una operación que recibe parámetros y retorna un valor." },
-      { "id": "concept7", "description": "Utilizado para trabajar con fechas y realizar cálculos con días, meses o años." },
-      { "id": "concept8", "description": "Se emplea cuando se necesita transformar un valor de un tipo de dato a otro." },
-      { "id": "concept9", "description": "Permite guardar datos en el navegador de manera persistente, accesible incluso después de recargar la página." },
-      { "id": "concept10", "description": "Herramienta que ayuda a mostrar información durante el desarrollo para fines de depuración." }
+      { "id": "concept1", "description": "Las listas permiten almacenar múltiples elementos de manera dinámica, a diferencia de los arrays." },
+      { "id": "concept2", "description": "Las variables de tipo String almacenan texto en Java y son inmutables." },
+      { "id": "concept3", "description": "Math.max() permite obtener el valor máximo entre dos números." },
+      { "id": "concept4", "description": "Los métodos en Java encapsulan lógica y pueden retornar valores." },
+      { "id": "concept5", "description": "La anotación @Autowired inyecta dependencias automáticamente en Spring Boot." },
+      { "id": "concept6", "description": "Los Optional ayudan a evitar NullPointerException al trabajar con datos opcionales." },
+      { "id": "concept7", "description": "LocalDate permite manejar fechas sin necesidad de manejar horas ni zonas horarias." },
+      { "id": "concept8", "description": "Integer.parseInt() convierte cadenas en valores enteros." },
+      { "id": "concept9", "description": "@RestController convierte una clase en un controlador de API en Spring Boot." },
+      { "id": "concept10", "description": "System.out.println() imprime mensajes en la consola para depuración y salida estándar." }
     ]
-  },
+  }
+},
   "codesReto2": {
     "title": "2. Falsy values en Javascript",
     "codes": [
