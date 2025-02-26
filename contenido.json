@@ -25,8 +25,7 @@
       { "id": "concept9", "description": "@RestController convierte una clase en un controlador de API en Spring Boot." },
       { "id": "concept10", "description": "System.out.println() imprime mensajes en la consola para depuración y salida estándar." }
     ]
-  }
-},
+  },
   "codesReto2": {
     "title": "2. Falsy values en Javascript",
     "codes": [
