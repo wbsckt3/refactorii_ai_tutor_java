@@ -1,0 +1,137 @@
+{
+  "codesReto1": {
+    "title": "1. Conceptos básicos de Javascript",
+    "codes": [
+      { "id": "code1", "code": "Array.isArray([1, 2, 3])" },
+      { "id": "code2", "code": "let nombre = \"Juan\";" },
+      { "id": "code3", "code": "Math.max(5, 10)" },
+      { "id": "code4", "code": "function saludo() { return \"Hola\"; }" },
+      { "id": "code5", "code": "document.getElementById(\"app\")" },
+      { "id": "code6", "code": "const suma = (a, b) => a + b;" },
+      { "id": "code7", "code": "new Date()" },
+      { "id": "code8", "code": "parseInt(\"42\")" },
+      { "id": "code9", "code": "window.localStorage" },
+      { "id": "code10", "code": "console.log(\"Hola Mundo\")" }
+    ],
+    "concepts": [
+      { "id": "concept1", "description": "Utilizado para trabajar eficientemente con conjuntos de datos almacenados en una estructura que permite acceder a elementos por su posición." },
+      { "id": "concept2", "description": "Sirve para almacenar información en la memoria, la cual puede ser cambiada o mantenida según la necesidad del código." },
+      { "id": "concept3", "description": "Función usada para encontrar el número más alto entre un conjunto de valores." },
+      { "id": "concept4", "description": "Se utiliza para definir bloques de código reutilizables que pueden ejecutarse varias veces con diferentes valores." },
+      { "id": "concept5", "description": "Permite la manipulación de los elementos HTML en una página web." },
+      { "id": "concept6", "description": "Manera concisa de definir una operación que recibe parámetros y retorna un valor." },
+      { "id": "concept7", "description": "Utilizado para trabajar con fechas y realizar cálculos con días, meses o años." },
+      { "id": "concept8", "description": "Se emplea cuando se necesita transformar un valor de un tipo de dato a otro." },
+      { "id": "concept9", "description": "Permite guardar datos en el navegador de manera persistente, accesible incluso después de recargar la página." },
+      { "id": "concept10", "description": "Herramienta que ayuda a mostrar información durante el desarrollo para fines de depuración." }
+    ]
+  },
+  "codesReto2": {
+    "title": "2. Falsy values en Javascript",
+    "codes": [
+      { "id": "code1", "code": "null" },
+      { "id": "code2", "code": "undefined" },
+      { "id": "code3", "code": "NaN" },
+      { "id": "code4", "code": "0" },
+      { "id": "code5", "code": "\"\" (cadena vacía)" },
+      { "id": "code6", "code": "false" },
+      { "id": "code7", "code": "-0" },
+      { "id": "code8", "code": "true" },
+      { "id": "code9", "code": "Boolean()" },
+      { "id": "code10", "code": "!!(valor)" }
+    ],
+    "concepts": [
+      { "id": "concept1", "description": "Representa la ausencia intencionada de cualquier valor." },
+      { "id": "concept2", "description": "Indica la ausencia de valor o que algo no se ha definido." },
+      { "id": "concept3", "description": "Este valor indica que no se ha podido realizar una operación matemática válida." },
+      { "id": "concept4", "description": "Utilizado en comparaciones numéricas." },
+      { "id": "concept5", "description": "Esta cadena no contiene caracteres." },
+      { "id": "concept6", "description": "Representa una falsedad explícita en una condición lógica." },
+      { "id": "concept7", "description": "Igual que su contraparte positiva, pero también se considera \"falsy\"." },
+      { "id": "concept8", "description": "Este valor lógico representa una verdad." },
+      { "id": "concept9", "description": "Se utiliza para convertir valores en verdaderos o falsos explícitamente." },
+      { "id": "concept10", "description": "Convierte cualquier valor en su equivalente booleano utilizando doble negación." }
+    ]
+  },
+  "codesReto3": {
+    "title": "3. Metaprogramación y Reactividad en JavaScript para VUE",
+    "codes": [
+      { "id": "code1", "code": "const proxy = new Proxy(target, handler);" },
+      { "id": "code2", "code": "Reflect.get(target, propertyKey, receiver);" },
+      { "id": "code3", "code": "Object.defineProperty(obj, 'prop', descriptor);" },
+      { "id": "code4", "code": "class MyComponent extends HTMLElement { }" },
+      { "id": "code5", "code": "import { reactive } from 'vue';" },
+      { "id": "code6", "code": "async function fetchData() { const result = await fetch(url); }" },
+      { "id": "code7", "code": "const generator = function* () { yield 1; yield 2; }" },
+      { "id": "code8", "code": "const observable = new WeakMap();" },
+      { "id": "code9", "code": "const privateField = Symbol();" },
+      { "id": "code10", "code": "const state = Object.freeze({ value: 0 });" }
+    ],
+    "concepts": [
+      { "id": "concept1", "description": "Proxy: Permite interceptar y redefinir operaciones fundamentales en objetos. Vue lo utiliza para reactividad." },
+      { "id": "concept2", "description": "Reflect API: Facilita la interacción con objetos mediante metaprogramación. Vue usa Reflect para realizar operaciones seguras en Proxies." },
+      { "id": "concept3", "description": "Definición de propiedades: Controla el acceso y la modificación de propiedades en un objeto. Vue define propiedades reactivas usando esta técnica." },
+      { "id": "concept4", "description": "Web Components: Clase nativa de JavaScript para crear elementos personalizados. Vue puede integrar Web Components." },
+      { "id": "concept5", "description": "Reactividad: Hace que los objetos sean reactivos, permitiendo que Vue detecte cambios y actualice la vista automáticamente." },
+      { "id": "concept6", "description": "Promesas y async/await: Permiten manejar operaciones asíncronas de forma más legible. Vue utiliza estas estructuras para cargar datos dinámicamente." },
+      { "id": "concept7", "description": "Generadores: Permiten pausar y reanudar funciones. Vue podría usar generadores en el control del flujo de datos." },
+      { "id": "concept8", "description": "WeakMap: Estructura de datos usada para almacenar objetos sin evitar que sean recogidos por el garbage collector. Vue usa WeakMaps para el manejo interno de reactividad." },
+      { "id": "concept9", "description": "Symbol: Un identificador único y privado, usado en Vue para proteger ciertas propiedades internas." },
+      { "id": "concept10", "description": "Object.freeze: Inmuniza objetos ante cambios, útil para mantener el estado inmutable en Vuex." }
+    ]
+  },
+  "codesReto4": {
+    "title": "4. VUE conceptos básicos",
+    "codes": [
+      { "id": "code1", "code": "{{ message }}" },
+      { "id": "code2", "code": "v-if=\"condition\"" },
+      { "id": "code3", "code": "v-bind:src=\"imageUrl\"" },
+      { "id": "code4", "code": "v-for=\"item in items\" :key=\"item.id\"" },
+      { "id": "code5", "code": "v-model=\"inputValue\"" },
+      { "id": "code6", "code": "mounted() { // código }" },
+      { "id": "code7", "code": "this.$emit('eventName', data)" },
+      { "id": "code8", "code": "props: ['title', 'content']" },
+      { "id": "code9", "code": "computed: { fullName() { return this.firstName + ' ' + this.lastName } }" },
+      { "id": "code10", "code": "watch: { items(newVal, oldVal) { // código } }" }
+    ],
+   "concepts": [
+      { "id": "concept1", "description": "Interpolación: Se usa para mostrar datos dinámicos en el HTML." },
+      { "id": "concept2", "description": "Directiva: Muestra o esconde elementos en función de una condición booleana." },
+      { "id": "concept3", "description": "Directiva: Une dinámicamente atributos o propiedades de un componente a una expresión en JavaScript." },
+      { "id": "concept4", "description": "Directiva: Repite un bloque de código por cada elemento de una lista y requiere un valor único (key)." },
+      { "id": "concept5", "description": "Directiva: Establece una vinculación bidireccional entre el valor de un input y el estado del componente." },
+      { "id": "concept6", "description": "Hook del ciclo de vida: Se ejecuta después de que el componente se ha montado en el DOM." },
+      { "id": "concept7", "description": "Emisión de eventos: Permite enviar eventos personalizados desde un componente hijo a su padre." },
+      { "id": "concept8", "description": "Props: Se usa para pasar datos desde un componente padre a un hijo." },
+      { "id": "concept9", "description": "Propiedades computadas: Propiedades que se recalculan solo cuando cambian sus dependencias." },
+      { "id": "concept10", "description": "Watcher: Observa cambios en una propiedad o dato específico y ejecuta código cuando cambia." }
+    ]
+  },
+  "codesReto5": {
+    "title": "5. VUE conceptos intermedios",
+    "codes": [
+      { "id": "code1", "code": "v-slot:header" },
+      { "id": "code2", "code": "v-once" },
+      { "id": "code3", "code": "v-cloak" },
+      { "id": "code4", "code": "$refs.input.focus()" },
+      { "id": "code5", "code": "v-model.lazy=\"inputValue\"" },
+      { "id": "code6", "code": "v-bind=\"$attrs\"" },
+      { "id": "code7", "code": "v-on=\"listeners\"" },
+      { "id": "code8", "code": "provide() { return { dataKey: this.dataValue } }" },
+      { "id": "code9", "code": "inject: ['dataKey']" },
+      { "id": "code10", "code": "is=\"componentName\"" }
+    ],
+    "concepts": [
+      { "id": "concept1", "description": "Slots: Permite pasar contenido dinámico a una plantilla desde el componente padre." },
+      { "id": "concept2", "description": "Directiva: Renderiza el contenido solo una vez y lo almacena en caché." },
+      { "id": "concept3", "description": "Directiva: Evita que el parpadeo inicial del contenido sea visible hasta que Vue esté completamente cargado." },
+      { "id": "concept4", "description": "Refs: Permite acceder a elementos o componentes del DOM directamente desde el código JavaScript." },
+      { "id": "concept5", "description": "Modificador de v-model: Actualiza el valor del input solo cuando el usuario termina de escribir y pierde el foco." },
+      { "id": "concept6", "description": "$attrs: Permite pasar atributos no declarados explícitamente en un componente hijo a un elemento del DOM." },
+      { "id": "concept7", "description": "$listeners: Permite pasar eventos desde el componente padre al componente hijo sin declararlos explícitamente." },
+      { "id": "concept8", "description": "Provide: Hace que un valor esté disponible para todos los componentes hijos sin necesidad de pasar props." },
+      { "id": "concept9", "description": "Inject: Recibe valores proporcionados por un componente ancestro a través de `provide`." },
+      { "id": "concept10", "description": "is: Permite renderizar dinámicamente un componente basado en su nombre." }
+    ]
+  }
+}
