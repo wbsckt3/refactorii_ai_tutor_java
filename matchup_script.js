@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
     // Función para cargar dinámicamente los códigos y conceptos desde JSON
     function cargarContenido(reto) {
         fetch('contenido.json')
